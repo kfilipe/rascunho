@@ -1,9 +1,11 @@
 const path = require ('path')
 
 module.exports = {
+    
+    mode: 'development',
+    
     entry: {
         index: './src/index.js',
-        galaxy: './src/galaxy.js'
     },
 
     output: {
@@ -20,11 +22,10 @@ module.exports = {
         ]
     },
 
-  /*  devServer: {
+    devServer: {
         static: {
-          directory: path.join(__dirname, 'public'),
-        },
-        compress: true,
-        port: 9000,
-      }, */ //NAO FUNCIONA
+            directory: path.join(__dirname, "dist"),
+            watch: true,
+        }
+    }
 }
