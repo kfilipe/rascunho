@@ -20,11 +20,11 @@ module.exports = {
         ]
     },
 
-   /* watch: true,
-
-    devServer: {
-        contentBase: path.join(__dirname, "dist"),
-        watchContentBase: true,
-        liveReload: true
-    } */
+  /*  devServer: {
+        static: {
+          directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 9000,
+      }, */ //NAO FUNCIONA
 }
